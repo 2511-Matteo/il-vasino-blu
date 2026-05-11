@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html class="scroll-smooth" lang="it"><head>
+<html class="scroll-smooth" lang="it">
+<head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Matteo e il Vasino Blu | Addio Pannolino!</title>
@@ -7,544 +8,101 @@
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "surface-container-high": "#e6e8ef",
-                        "surface-container": "#ecedf5",
-                        "background": "#f8f9ff",
-                        "tertiary-container": "#a06900",
-                        "error-container": "#ffdad6",
-                        "surface-variant": "#e1e2e9",
-                        "on-primary-fixed-variant": "#004883",
-                        "secondary": "#7d570b",
-                        "primary-container": "#2976c7",
-                        "on-tertiary-fixed": "#291800",
-                        "on-primary-container": "#fdfcff",
-                        "on-secondary-fixed": "#281900",
-                        "on-secondary": "#ffffff",
-                        "on-surface-variant": "#414751",
-                        "inverse-primary": "#a4c9ff",
-                        "secondary-container": "#fec975",
-                        "error": "#ba1a1a",
-                        "secondary-fixed": "#ffdeae",
-                        "on-tertiary-container": "#fffbff",
-                        "on-error-container": "#93000a",
-                        "inverse-on-surface": "#eff0f8",
-                        "on-surface": "#191c21",
-                        "primary": "#4A90E2",
-                        "on-primary-fixed": "#001c39",
-                        "on-tertiary": "#ffffff",
-                        "surface-container-low": "#f2f3fb",
-                        "on-secondary-container": "#785305",
-                        "on-primary": "#ffffff",
-                        "surface": "#f8f9ff",
-                        "surface-container-lowest": "#ffffff",
-                        "outline-variant": "#c1c7d3",
-                        "tertiary-fixed": "#ffddb4",
-                        "on-tertiary-fixed-variant": "#633f00",
-                        "tertiary": "#7f5300",
-                        "surface-tint": "#4A90E2",
-                        "surface-bright": "#f8f9ff",
-                        "on-error": "#ffffff",
-                        "on-secondary-fixed-variant": "#604100",
-                        "outline": "#717783",
-                        "on-background": "#191c21",
-                        "primary-fixed": "#d4e3ff",
-                        "surface-container-highest": "#e1e2e9",
-                        "inverse-surface": "#2e3036",
-                        "primary-fixed-dim": "#a4c9ff",
-                        "secondary-fixed-dim": "#f1be6c",
-                        "tertiary-fixed-dim": "#ffb953",
-                        "surface-dim": "#d8dae1"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "8px",
-                        "lg": "8px",
-                        "xl": "12px",
-                        "2xl": "16px",
-                        "3xl": "24px",
-                        "full": "9999px"
-                    },
-                    "spacing": {
-                        "xl": "80px",
-                        "gutter": "24px",
-                        "xs": "4px",
-                        "md": "24px",
-                        "lg": "48px",
-                        "margin": "32px",
-                        "sm": "12px",
-                        "base": "8px"
-                    },
-                    "fontFamily": {
-                        "display-lg": ["Plus Jakarta Sans"],
-                        "body-md": ["Be Vietnam Pro"],
-                        "quote-accent": ["Caveat"],
-                        "headline-md": ["Plus Jakarta Sans"],
-                        "body-lg": ["Be Vietnam Pro"],
-                        "label-md": ["Plus Jakarta Sans"],
-                        "headline-lg": ["Plus Jakarta Sans"]
-                    },
-                    "fontSize": {
-                        "display-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "800"}],
-                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                        "quote-accent": ["28px", {"lineHeight": "1.2", "fontWeight": "600"}],
-                        "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "700"}],
-                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                        "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.02em", "fontWeight": "600"}],
-                        "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "700"}]
-                    }
-                }
-            }
+tailwind.config = {
+    darkMode: "class",
+    theme: {
+        extend: {
+            "colors": {
+                "surface-container-high": "#e6e8ef", "surface-container": "#ecedf5", "background": "#f8f9ff", "tertiary-container": "#a06900", "error-container": "#ffdad6", "surface-variant": "#e1e2e9", "on-primary-fixed-variant": "#004883", "secondary": "#7d570b", "primary-container": "#2976c7", "on-tertiary-fixed": "#291800", "on-primary-container": "#fdfcff", "on-secondary-fixed": "#281900", "on-secondary": "#ffffff", "on-surface-variant": "#414751", "inverse-primary": "#a4c9ff", "secondary-container": "#fec975", "error": "#ba1a1a", "secondary-fixed": "#ffdeae", "on-tertiary-container": "#fffbff", "on-error-container": "#93000a", "inverse-on-surface": "#eff0f8", "on-surface": "#191c21", "primary": "#4A90E2", "on-primary-fixed": "#001c39", "on-tertiary": "#ffffff", "surface-container-low": "#f2f3fb", "on-secondary-container": "#785305", "on-primary": "#ffffff", "surface": "#f8f9ff", "surface-container-lowest": "#ffffff", "outline-variant": "#c1c7d3", "tertiary-fixed": "#ffddb4", "on-tertiary-fixed-variant": "#633f00", "tertiary": "#7f5300", "surface-tint": "#4A90E2", "surface-bright": "#f8f9ff", "on-error": "#ffffff", "on-secondary-fixed-variant": "#604100", "outline": "#717783", "on-background": "#191c21", "primary-fixed": "#d4e3ff", "surface-container-highest": "#e1e2e9", "inverse-surface": "#2e3036", "primary-fixed-dim": "#a4c9ff", "secondary-fixed-dim": "#f1be6c", "tertiary-fixed-dim": "#ffb953", "surface-dim": "#d8dae1"
+            },
+            "borderRadius": { "DEFAULT": "8px", "lg": "8px", "xl": "12px", "2xl": "16px", "3xl": "24px", "full": "9999px" },
+            "fontFamily": { "display-lg": ["Plus Jakarta Sans"], "body-md": ["Be Vietnam Pro"], "quote-accent": ["Caveat"] }
         }
-    </script>
+    }
+}
+</script>
 <style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        .text-shadow-sm { text-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        .bg-soft-cream { background-color: #FEFBF6; }
-        .glass-card {
-            background: rgba(255, 255, 255, 0.7);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-        }
-        .lang-dropdown:hover .lang-menu {
-            display: block;
-        }
-        .star-pattern {
-            background-color: #f1f3f7;
-            background-image: radial-gradient(#dbeafe 1px, transparent 1px);
-            background-size: 40px 40px;
-        }
-    </style>
+.material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+.bg-soft-cream { background-color: #FEFBF6; }
+.glass-card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.3); }
+.star-pattern { background-color: #f1f3f7; background-image: radial-gradient(#dbeafe 1px, transparent 1px); background-size: 40px 40px; }
+</style>
 </head>
 <body class="bg-soft-cream font-body-md text-on-surface antialiased">
-<nav class="fixed top-0 w-full z-50 h-24 bg-white/90 backdrop-blur-xl border-b-4 border-dashed border-sky-100 shadow-[0_10px_30px_-15px_rgba(74,144,226,0.3)]">
+<nav class="fixed top-0 w-full z-50 h-24 bg-white/90 backdrop-blur-xl border-b-4 border-dashed border-sky-100">
 <div class="max-w-7xl mx-auto px-8 h-full flex justify-between items-center">
-<div class="flex items-center gap-2 cursor-pointer hover:scale-105 hover:rotate-1 transition-transform duration-300">
-<img alt="Il Cerchio Edizioni Logo" class="h-16 w-auto" src="logo-ediciones.png"/>
+<img alt="Logo" class="h-16 w-auto" src="logo-ediciones.png"/>
+<div class="hidden md:flex gap-4 font-bold text-sm">
+<a href="#book" class="text-primary">Il Libro</a>
+<a href="#story" class="text-slate-600">Storia</a>
+<a href="#author" class="text-slate-600">L'Autrice</a>
+<a href="#resources" class="text-slate-600">Risorse</a>
 </div>
-<div class="hidden md:flex items-center space-x-2 font-plus-jakarta text-sm font-bold tracking-tight">
-<a class="text-primary bg-blue-50 px-4 py-2 rounded-full cursor-pointer active:scale-90 transition-all" href="#book">Il Libro</a>
-<a class="text-slate-600 hover:text-primary px-4 py-2 transition-all cursor-pointer active:scale-90" href="#story">Storia</a>
-<a class="text-slate-600 hover:text-primary px-4 py-2 transition-all cursor-pointer active:scale-90" href="#author">L'Autrice</a>
-<a class="text-slate-600 hover:text-primary px-4 py-2 transition-all cursor-pointer active:scale-90" href="#resources">Risorse</a>
-</div>
-<div class="flex items-center gap-4">
-<div class="relative lang-dropdown">
-<button class="flex items-center gap-2 text-slate-600 font-bold text-sm px-4 py-2 rounded-full border border-slate-200 hover:bg-slate-50 transition-all cursor-pointer">
-<span class="material-symbols-outlined text-sky-500">language</span>
-                    Lingue
-                    <span class="material-symbols-outlined text-xs">expand_more</span>
-</button>
-<div class="lang-menu hidden absolute right-0 mt-2 w-40 bg-white rounded-2xl shadow-xl border border-slate-100 overflow-hidden z-50">
-<div class="px-4 py-2 hover:bg-sky-50 text-sky-600 font-bold text-sm cursor-pointer flex items-center gap-2">
-<span class="w-2 h-2 rounded-full bg-sky-500"></span> Italiano
-                    </div>
-<div class="px-4 py-2 text-slate-400 font-medium text-sm cursor-not-allowed flex items-center justify-between opacity-60">
-                        Español <span class="text-[10px] bg-slate-100 px-1.5 py-0.5 rounded">Soon</span>
-</div>
-<div class="px-4 py-2 text-slate-400 font-medium text-sm cursor-not-allowed flex items-center justify-between opacity-60">
-                        English <span class="text-[10px] bg-slate-100 px-1.5 py-0.5 rounded">Soon</span>
-</div>
-</div>
-</div>
-<button class="px-6 py-3 rounded-full font-bold text-sm hover:scale-105 active:scale-95 transition-all duration-300 shadow-lg shadow-orange-200" style="background-color: #FFD814; color: #0F1111;">
-                Acquista ora
-            </button>
-</div>
+<button class="px-6 py-3 rounded-full font-bold text-sm shadow-lg" style="background-color: #FFD814; color: #0F1111;">Acquista ora</button>
 </div>
 </nav>
-<section class="relative min-h-screen flex items-center pt-24 overflow-hidden star-pattern">
-<div class="absolute inset-0 z-0">
-<div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#FEFBF6]/80"></div>
-</div>
-<div class="relative z-10 max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-16 items-center">
-<div class="space-y-8">
-<h1 class="font-display-lg text-display-lg text-primary">Matteo e il Vasino Blu</h1>
-<p class="text-body-lg font-body-lg text-on-surface-variant max-w-lg">Addio pannolino! La storia vera che acompaña i bambini verso la grande avventura dell'asilo — raccontata con amore da una mamma.</p>
-<div class="flex flex-wrap gap-4 pt-4">
-<button class="px-8 py-4 rounded-full font-headline-md flex items-center gap-3 hover:scale-105 active:scale-95 transition-all shadow-xl shadow-primary/30" style="background-color: #FFD814; color: #0F1111;">
-<span class="material-symbols-outlined">shopping_cart</span>
-                    Acquista su Amazon
-                </button>
-</div>
-</div>
-<div class="relative flex justify-center">
-<div class="relative group">
-<div class="absolute -inset-4 bg-primary/20 blur-3xl rounded-full opacity-50 group-hover:opacity-75 transition-opacity"></div>
-<img alt="Copertina ufficiale del libro Matteo e il Vasino Blu" class="relative rounded-xl shadow-[20px_20px_60px_rgba(0,0,0,0.2)] hover:rotate-2 transition-transform duration-500 w-80 md:w-[400px]" src="portada-libro.jpg"/>
-</div>
-</div>
-</div>
-</section>
-<section class="py-xl bg-white/50 relative" id="story">
-<div class="max-w-7xl mx-auto px-8">
-<div class="text-center mb-16">
-<h2 class="font-display-lg text-headline-lg mb-4 text-slate-900 uppercase">LA STORIA DIETRO LA STORIA</h2>
-<p class="text-quote-accent text-primary mb-6">Un viaggio lungo cinquantasette anni per tornare a casa.</p>
-</div>
-<div class="grid lg:grid-cols-12 gap-12 items-start">
-<div class="lg:col-span-7 space-y-6">
-<div class="glass-card p-8 md:p-10 rounded-[2.5rem] shadow-sm">
-<div class="prose prose-slate max-w-none">
-<p class="text-body-lg text-on-surface-variant leading-relaxed mb-6">Tutto ha inizio nel 1967, quando una bambina di nome Mila (la nonna) lasciava l’Italia per il Perù insieme ai suoi genitori. Partivano con il cuore colmo di ricordi, ma con una missione silenziosa: non permettere mai che le radici morissero. In Perù, quel legame con l’Italia è stato custodito come un tesoro e tramandato a Mariangela (la figlia e autrice).</p>
-<p class="text-body-lg text-on-surface-variant leading-relaxed mb-6">È stata proprio quella bussola d'amore a guidare Mariangela e la sua famiglia nel viaggio di ritorno nel 2024. Stabilitisi a Vedano Olona, è accaduto l’incredibile: il piccolo Matteo (il nipote) ha iniziato a frequentare lo stesso identico asilo che sua nonna Mila aveva lasciato mezzo secolo prima.</p>
-<p class="text-body-lg text-on-surface-variant leading-relaxed mb-8">Oggi, Matteo varca quel cancello con il suo vasino blu, riprendendo il filo di una storia interrotta tre generazioni fa. Un ritorno magico reso possibile dal sogno di chi, anche da lontano, ha saputo indicare la strada verso casa.</p>
-<div class="space-y-4 pt-6 border-t border-slate-100">
-<div class="flex items-center gap-3">
-<span class="material-symbols-outlined text-primary">calendar_today</span>
-<p class="text-body-md font-bold"><span class="text-primary">1967:</span> La nonna parte, portando l'Italia nel cuore.</p>
-</div>
-<div class="flex items-center gap-3">
-<span class="material-symbols-outlined text-secondary">calendar_today</span>
-<p class="text-body-md font-bold"><span class="text-secondary">2024:</span> Il nipote ritorna, per giocare nello mismo giardino.</p>
-</div>
-<div class="flex items-center gap-3 bg-blue-50/50 p-4 rounded-2xl">
-<span class="material-symbols-outlined text-primary">family_history</span>
-<p class="text-body-md font-bold text-on-surface">Tre generazioni, un solo cancello. Il cerchio si chiude.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="lg:col-span-5">
-<div class="grid grid-cols-1 gap-6">
-<div class="relative group">
-<div class="bg-white p-3 rounded-3xl shadow-xl rotate-[-2deg] transition-transform duration-500 hover:rotate-0">
-<img alt="Foto storica - 1963" class="w-full h-auto rounded-2xl object-cover aspect-[3/4]" src="foto-mila-1963.jpeg"/>
-<div class="mt-4 text-center">
-<span class="font-quote-accent text-slate-500 text-xl">Mila all'asilo, 1963</span>
-</div>
-</div>
-</div>
-<div class="grid gap-4 grid-cols-3">
-<div class="relative group">
-<div class="bg-white p-2 rounded-2xl shadow-lg rotate-2 transition-transform duration-500 hover:rotate-0">
-<img alt="Mila e Mariangela" class="w-full h-auto rounded-xl object-cover aspect-square" src="mila-mariangela.jpeg"/>
-<div class="mt-2 text-center">
-<span class="font-quote-accent text-slate-500 text-[10px] leading-tight block">Mila e Mariangela</span>
-</div>
-</div>
-</div>
-<div class="relative group">
-<div class="bg-white p-2 rounded-2xl shadow-lg -rotate-1 transition-transform duration-500 hover:rotate-0">
-<img alt="Matteo al parco" class="w-full h-auto rounded-xl object-cover aspect-square" src="Matteo-Parque.jpeg"/>
-<div class="mt-2 text-center">
-<span class="font-quote-accent text-slate-500 text-[10px] leading-tight block">Matteo 2024</span>
-</div>
-</div>
-</div>
-<div class="relative group">
-<div class="bg-white p-2 rounded-2xl shadow-lg rotate-1 transition-transform duration-500 hover:rotate-0">
-<img alt="Altalene fuori l'asilo" class="w-full h-auto rounded-xl object-cover aspect-square" src="altalene.jpeg"/>
-<div class="mt-2 text-center">
-<span class="font-quote-accent text-slate-500 text-[10px] leading-tight block">Matteo alle altalene, 2024</span>
-</div>
-</div>
-</div></div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="py-xl" id="book">
-<div class="max-w-7xl mx-auto px-8">
-<div class="text-center mb-16">
-<h2 class="font-display-lg text-headline-lg mb-4">Cosa troverai nel libro?</h2>
-<p class="text-body-lg text-on-surface-variant max-w-2xl mx-auto">Un'esperienza completa per accompagner i piccoli e i grandi in questo momento importante.</p>
-</div>
-<div class="max-w-5xl mx-auto mb-20">
-<div class="aspect-[2/1] bg-surface-container rounded-[2.5rem] overflow-hidden shadow-2xl relative group">
-<div class="flex transition-transform duration-500 ease-out h-full" id="book-carousel">
-<div class="min-w-full h-full">
-<img alt="Illustrazione 1" class="w-full h-full object-contain bg-white" src="interior-1.jpeg"/>
-</div>
-<div class="min-w-full h-full">
-<img alt="Illustrazione 2" class="w-full h-full object-contain bg-white" src="interior-2.jpeg"/>
-</div>
-<div class="min-w-full h-full">
-<img alt="Illustrazione 3" class="w-full h-full object-contain bg-white" src="interior-3.jpeg"/>
-</div>
-</div>
-<div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-3 z-10 bg-black/20 backdrop-blur-md px-6 py-3 rounded-full">
-<button aria-label="Slide 1" class="carousel-dot w-3 h-3 rounded-full bg-primary transition-all duration-300" onclick="goToSlide(0)"></button>
-<button aria-label="Slide 2" class="carousel-dot w-3 h-3 rounded-full bg-white/50 transition-all duration-300" onclick="goToSlide(1)"></button>
-<button aria-label="Slide 3" class="carousel-dot w-3 h-3 rounded-full bg-white/50 transition-all duration-300" onclick="goToSlide(2)"></button>
-</div>
-<button class="absolute left-6 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-primary p-3 rounded-full shadow-xl opacity-0 group-hover:opacity-100 transition-all" onclick="prevSlide()">
-<span class="material-symbols-outlined text-3xl">chevron_left</span>
-</button>
-<button class="absolute right-6 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-primary p-3 rounded-full shadow-xl opacity-0 group-hover:opacity-100 transition-all" onclick="nextSlide()">
-<span class="material-symbols-outlined text-3xl">chevron_right</span>
-</button>
-</div>
-</div>
-<div class="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-<div class="flex items-center gap-5 p-6 rounded-3xl bg-white shadow-sm border border-blue-50 hover:shadow-md transition-shadow">
-<span class="w-14 h-14 shrink-0 rounded-2xl bg-blue-100 text-primary flex items-center justify-center">
-<span class="material-symbols-outlined text-3xl">auto_stories</span>
-</span>
-<div>
-<p class="font-headline-md text-xl">Storia illustrata</p>
-<p class="text-on-surface-variant">Per bimbi di 2 a 4 anni</p>
-</div>
-</div>
-<div class="flex items-center gap-5 p-6 rounded-3xl bg-white shadow-sm border border-blue-50 hover:shadow-md transition-shadow">
-<span class="w-14 h-14 shrink-0 rounded-2xl bg-blue-50 text-sky-600 flex items-center justify-center">
-<span class="material-symbols-outlined text-3xl">menu_book</span>
-</span>
-<div>
-<p class="font-headline-md text-xl">Guida per Genitori</p>
-<p class="text-on-surface-variant">Consigli pratici degli esperti</p>
-</div>
-</div>
-<div class="flex items-center gap-5 p-6 rounded-3xl bg-white shadow-sm border border-blue-50 hover:shadow-md transition-shadow">
-<span class="w-14 h-14 shrink-0 rounded-2xl bg-secondary-container/20 text-secondary flex items-center justify-center">
-<span class="material-symbols-outlined text-3xl">grade</span>
-</span>
-<div>
-<p class="font-headline-md text-xl">Tabella delle Stelline</p>
-<p class="text-on-surface-variant">Per premiare ogni piccolo progresso</p>
-</div>
-</div>
-<div class="flex items-center gap-5 p-6 rounded-3xl bg-white shadow-sm border border-blue-50 hover:shadow-md transition-shadow">
-<span class="w-14 h-14 shrink-0 rounded-2xl bg-green-50 text-green-600 flex items-center justify-center">
-<span class="material-symbols-outlined text-3xl">workspace_premium</span>
-</span>
-<div>
-<p class="font-headline-md text-xl">Diploma del Vasino</p>
-<p class="text-on-surface-variant">Un traguardo da appendere in cameretta</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="py-xl" id="author">
+
+<section class="relative min-h-screen flex items-center pt-24 star-pattern">
 <div class="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-16 items-center">
 <div class="space-y-8">
-<div class="flex items-center gap-4">
-<div class="w-20 h-20 rounded-full overflow-hidden border-4 border-primary/20">
-<img alt="Primo piano di Mariangela" class="w-full h-full object-cover" src="mariangela-perfil.png"/>
+<h1 class="text-5xl font-extrabold text-primary">Matteo e il Vasino Blu</h1>
+<p class="text-lg text-slate-600">Addio pannolino! Una storia vera raccontata con amore da una mamma.</p>
 </div>
-<h2 class="font-display-lg text-headline-lg text-primary"><span class="text-primary">L'AUTRICE</span><br/><span class="text-primary text-2xl">Mariangela Reggiardo</span></h2>
-</div>
-<p class="text-body-lg text-on-surface-variant leading-relaxed">Mariangela Reggiardo è la mamma di Matteo, il piccolo protagonista della nostra storia. Nata e cresciuta in Perù, è figlia di due culture che convivono in lei con naturalezza: l'Italia, radicata nel sangue della sua famiglia, e il Perù, che l’ha accompagnata in ogni paso della sua crescita. Dopo una carriera in legge e la nascita del primo figlio, Domenico, l’arrivo di Matteo undici anni dopo ha segnato l'inizio di un nuevo, emocionante capitolo. È osservando le piccole, grandi scoperte quotidiane di suo figlio che Mariangela ha sentito il bisogno di scrivere. Ha scelto ogni parola con cura affinché fosse semplice e sincera, capace di arrivare al cuore di ogni genitore que vive, ogni giorno, la meraviglia e le sfide di veder crescere i propri figli.</p>
-<div class="bg-blue-50/50 p-6 rounded-2xl border-l-4 border-primary italic">
-<p class="font-quote-accent text-primary text-2xl leading-relaxed">
-                    Matteo e il Vasino Blu è il suo primo libro. E sicuramente, non sarà l’ultimo.
-                </p>
-</div>
-<div class="flex items-center gap-6">
-<a class="flex items-center gap-3 text-primary font-headline-md hover:underline decoration-2" href="https://instagram.com/matteo.storie">
-<span class="material-symbols-outlined">photo_camera</span>
-                    @matteo.storie
-                </a>
-</div>
-</div>
-<div class="relative">
-<div class="w-full rounded-[3rem] overflow-hidden rotate-3 shadow-2xl border-8 border-white aspect-auto bg-white">
-<img alt="Mariangela e suo figlio" class="w-full h-full object-cover" src="mariangela-matteo.jpeg"/>
-</div>
-</div>
+<img alt="Copertina" class="rounded-xl shadow-2xl w-80 md:w-[400px]" src="portada-libro.jpg"/>
 </div>
 </section>
-<section class="py-xl bg-white/30">
+
+<section class="py-20" id="story">
 <div class="max-w-7xl mx-auto px-8">
-<div class="text-center mb-16">
-<h2 class="font-display-lg text-headline-lg text-primary mb-4">Il vero Matteo</h2>
-<p class="text-body-lg text-on-surface-variant">Dal mondo reale alla carta stampata: un legame speciale.</p>
+<h2 class="text-3xl font-bold text-center mb-12">LA STORIA DIETRO LA STORIA</h2>
+<div class="grid lg:grid-cols-2 gap-12">
+<div class="glass-card p-10 rounded-3xl shadow-sm">
+<p class="text-lg leading-relaxed mb-6">Tutto ha inizio nel 1967... [Texto de la historia] ...Matteo varca quel cancello con il suo vasino blu.</p>
 </div>
-<div class="max-w-4xl mx-auto">
-<div class="grid md:grid-cols-2 gap-8 items-stretch">
-<div class="group relative flex flex-col">
-<div class="bg-white p-4 rounded-[2.5rem] shadow-xl hover:scale-[1.02] transition-transform duration-300 flex-1 flex flex-col">
-<div class="aspect-[3/4] rounded-[2rem] overflow-hidden">
-<img alt="Il vero Matteo nella natura" class="w-full h-full object-cover" src="matefoto.jpeg"/>
-</div>
-<p class="mt-6 font-headline-md text-center text-slate-500">Matteo</p>
-</div>
-<div class="absolute -top-4 -left-4 bg-sky-100 text-sky-600 px-4 py-2 rounded-full font-bold text-sm shadow-sm z-10">REALTÀ</div>
-</div>
-<div class="group relative flex flex-col">
-<div class="bg-white p-4 rounded-[2.5rem] shadow-xl hover:scale-[1.02] transition-transform duration-300 flex-1 flex flex-col">
-<div class="aspect-[3/4] rounded-[2rem] overflow-hidden">
-<img alt="Il vero Matteo illustrato" class="w-full h-full object-cover" src="mateofantasia.jpg"/>
-</div>
-<p class="mt-6 font-headline-md text-center text-primary">Il Protagonista</p>
-</div>
-<div class="absolute -top-4 -right-4 bg-primary text-on-primary px-4 py-2 rounded-full font-bold text-sm shadow-sm z-10">FANTASIA</div>
-</div>
-</div>
-<div class="text-center mt-12">
-<p class="font-quote-accent text-slate-400 text-3xl">La realtà incontra la fantasia</p>
-</div>
-</div>
-</div>
-</section>
-<section class="py-xl bg-primary text-on-primary">
-<div class="max-w-7xl mx-auto px-8 text-center mb-16">
-<div class="flex justify-center mb-8">
-<div class="w-64 h-64 rounded-full border-[6px] border-white/40 overflow-hidden shadow-2xl relative">
-<img alt="Matteo ritratto circolare" class="absolute inset-0 w-full h-full object-cover" src="Matteo-circulo.png"/>
-</div>
-</div>
-<h2 class="font-display-lg text-headline-lg mb-4">La Collana: Le Storie di Matteo</h2>
-<p class="text-primary-fixed opacity-95 text-2xl font-semibold">Ogni avventura è un passo verso la crescita.</p>
-</div>
-<div class="max-w-5xl mx-auto px-8 grid md:grid-cols-2 gap-12">
-<div class="group bg-white/10 backdrop-blur-md p-6 rounded-3xl border border-white/20 flex flex-col h-full">
-<div class="aspect-square bg-white rounded-2xl mb-6 overflow-hidden shadow-lg">
-<img alt="Matteo e il Vasino Blu Cover" class="w-full h-full object-cover" src="portada-libro.jpg"/>
-</div>
-<div class="flex-grow">
-<h3 class="font-headline-md mb-2 text-xl">Il Vasino Blu</h3>
-<span class="inline-block px-3 py-1 bg-green-500/30 text-green-100 rounded-full text-xs font-bold uppercase tracking-wider">Disponibile</span>
-</div>
-</div>
-<div class="group bg-white/5 backdrop-blur-md p-6 rounded-3xl border border-white/10 flex flex-col h-full">
-<div class="aspect-square bg-white rounded-2xl mb-6 overflow-hidden shadow-lg">
-<img alt="In Arrivo - Prossimamente" class="w-full h-full object-contain bg-white" src="proximamente.png"/>
-</div>
-<div class="flex-grow">
-<h3 class="font-headline-md mb-2 text-xl">Nuova Avventura</h3>
-<span class="inline-block px-3 py-1 bg-white/20 text-white rounded-full text-xs font-bold uppercase tracking-wider">PROSSIMAMENTE</span>
-</div>
-</div>
-</div>
-<div class="max-w-xl mx-auto px-8 mt-20 bg-white/10 p-8 rounded-3xl border border-white/20">
-<h4 class="font-headline-md text-center mb-6">Rimani aggiornato sulle nuove uscite</h4>
-<form action="https://formspree.io/f/cerchioedizioni@gmail.com" method="POST" class="flex flex-col sm:flex-row gap-4">
-<input name="email" class="flex-1 bg-white/10 border-white/20 text-white placeholder-white/50 rounded-full px-6 focus:ring-secondary-container" placeholder="La tua email" type="email" required/>
-<button type="submit" class="bg-secondary-container text-on-secondary-container px-8 py-3 rounded-full font-bold hover:scale-105 transition-transform">Iscriviti</button>
-</form>
-</div>
-</section>
-<section class="py-xl" id="resources">
-<div class="max-w-7xl mx-auto px-8">
-<div class="text-center mb-16">
-<img alt="Magical touch bonus" class="w-48 h-48 mx-auto mb-6 object-cover object-top rounded-full shadow-lg border-4 border-white aspect-square" src="regalo-bonus.png"/>
-<h2 class="font-display-lg text-headline-lg mb-4">Regali Speciali per Te</h2>
-<p class="text-body-lg text-on-surface-variant">Scarica gratuitamente i materiali per rendere l'addio al pannolino indimenticabile.</p>
-</div>
-<div class="grid md:grid-cols-3 gap-8">
-<div class="group bg-white p-8 rounded-3xl border-2 border-dashed border-blue-100 hover:border-primary transition-colors text-center">
-<div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center mx-auto mb-6 text-primary">
-<span class="material-symbols-outlined text-3xl">workspace_premium</span>
-</div>
-<h3 class="font-headline-md mb-4">Il Diploma</h3>
-<p class="text-sm text-on-surface-variant mb-6">Un riconoscimento ufficiale per il tuo piccolo grande eroe.</p>
-<button class="text-primary font-bold flex items-center gap-2 mx-auto group-hover:translate-y-1 transition-transform">
-<span class="material-symbols-outlined">download</span> Download PDF
-                </button>
-</div>
-<div class="group bg-white p-8 rounded-3xl border-2 border-dashed border-blue-100 hover:border-primary transition-colors text-center">
-<div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center mx-auto mb-6 text-primary">
-<span class="material-symbols-outlined text-3xl">calendar_month</span>
-</div>
-<h3 class="font-headline-md mb-4">Tabella Stelline</h3>
-<p class="text-sm text-on-surface-variant mb-6">Visualizza i progressi giornalieri con allegria e colore.</p>
-<button class="text-primary font-bold flex items-center gap-2 mx-auto group-hover:translate-y-1 transition-transform">
-<span class="material-symbols-outlined">download</span> Download PDF
-                </button>
-</div>
-<div class="group bg-white p-8 rounded-3xl border-2 border-dashed border-blue-100 hover:border-primary transition-colors text-center">
-<div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center mx-auto mb-6 text-primary">
-<span class="material-symbols-outlined text-3xl">menu_book</span>
-</div>
-<h3 class="font-headline-md mb-4 uppercase text-xs tracking-widest">MINI GUIDA PDF</h3>
-<p class="text-sm text-on-surface-variant mb-6">Mini guida PDF con 5 consigli pratici per i genitori</p>
-<button class="text-primary font-bold flex items-center gap-2 mx-auto group-hover:translate-y-1 transition-transform">
-<span class="material-symbols-outlined">download</span> Download PDF
-                </button>
-</div>
-</div>
-</div>
-</section>
-<section class="py-xl bg-surface-container-highest">
-<div class="max-w-4xl mx-auto px-8 text-center">
-<div class="bg-white p-12 rounded-[3rem] shadow-2xl space-y-8 relative overflow-hidden">
-<div class="absolute top-0 right-0 w-32 h-32 bg-secondary-container rounded-bl-full opacity-20"></div>
-<div class="grid md:grid-cols-2 gap-12 items-center">
-<div class="flex justify-center">
-<img alt="Copertina Matteo e il Vasino Blu" class="w-64 rounded-xl shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500" src="portada-libro.jpg"/>
-</div>
-<div class="space-y-8 text-left md:text-left">
-<h2 class="font-display-lg text-headline-lg tracking-tight text-slate-900">Inizia l'Avventura di Matteo</h2>
-<div class="flex items-baseline gap-4">
-<span class="text-display-lg text-primary">€9.99</span>
-</div>
-<p class="text-body-lg text-on-surface-variant">Disponibile su tutti gli store Amazon europei</p>
-<div class="grid grid-cols-2 md:grid-cols-3 gap-3">
-<button class="bg-surface-container-low p-3 rounded-2xl font-bold hover:bg-primary hover:text-white transition-all text-sm">Amazon.it</button>
-<button class="bg-surface-container-low p-3 rounded-2xl font-bold hover:bg-primary hover:text-white transition-all text-sm">Amazon.es</button>
-<button class="bg-surface-container-low p-3 rounded-2xl font-bold hover:bg-primary hover:text-white transition-all text-sm">Amazon.de</button>
-<button class="bg-surface-container-low p-3 rounded-2xl font-bold hover:bg-primary hover:text-white transition-all text-sm">Amazon.fr</button>
-<button class="bg-surface-container-low p-3 rounded-2xl font-bold hover:bg-primary hover:text-white transition-all text-sm">Amazon.uk</button>
-</div>
-<button class="w-full py-6 rounded-2xl font-display-lg text-2xl hover:scale-[1.02] active:scale-95 transition-all shadow-xl shadow-orange-200 mt-6" style="background-color: #FFD814; color: #0F1111;">
-                        Aggiungi al carrello
-                    </button>
+<div class="grid gap-6">
+<img src="foto-mila-1963.jpeg" class="rounded-3xl shadow-xl w-full object-cover aspect-[3/4]"/>
+<div class="grid grid-cols-3 gap-4">
+<img src="mila-mariangela.jpeg" class="rounded-2xl shadow-lg aspect-square object-cover"/>
+<img src="Matteo-Parque.jpeg" class="rounded-2xl shadow-lg aspect-square object-cover"/>
+<img src="altalene.jpeg" class="rounded-2xl shadow-lg aspect-square object-cover"/>
 </div>
 </div>
 </div>
 </div>
 </section>
-<footer class="w-full py-12 px-8 border-t border-blue-50 bg-white">
-<div class="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto gap-8">
-<div class="text-lg font-bold text-primary font-display-lg">Il Cerchio Edizioni</div>
-<div class="flex gap-8 font-label-md text-slate-500">
-<a class="hover:text-primary transition-all" href="#">About Us</a>
-<a class="hover:text-primary transition-all" href="#">Contact</a>
-<a class="hover:text-primary transition-all" href="#">Privacy</a>
-<a class="hover:text-primary transition-all flex items-center gap-1" href="https://instagram.com/matteo.storie"><span class="material-symbols-outlined text-sm">photo_camera</span> @matteo.storie</a></div>
-<div class="text-sm font-['Plus_Jakarta_Sans'] text-slate-500">
-            © 2024 Il Cerchio Edizioni. Tutti i diritti riservati.
-        </div>
+
+<section class="py-20 bg-white/30">
+<div class="max-w-7xl mx-auto px-8 text-center">
+<h2 class="text-3xl font-bold mb-12">Il vero Matteo</h2>
+<div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+<div class="bg-white p-4 rounded-[2.5rem] shadow-xl relative">
+<img src="matefoto.jpeg" class="rounded-[2rem] w-full aspect-[3/4] object-cover"/>
+<p class="mt-4 font-bold text-slate-500">REALTÀ</p>
 </div>
+<div class="bg-white p-4 rounded-[2.5rem] shadow-xl relative">
+<img src="mateofantasia.jpg" class="rounded-[2rem] w-full aspect-[3/4] object-cover"/>
+<p class="mt-4 font-bold text-primary">FANTASIA</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="author" class="py-20">
+<div class="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-16 items-center">
+<div>
+<div class="flex items-center gap-4 mb-8">
+<img src="mariangela-perfil.png" class="w-20 h-20 rounded-full border-4 border-primary/20 object-cover"/>
+<h2 class="text-3xl font-bold text-primary">L'AUTRICE<br><span class="text-xl">Mariangela Reggiardo</span></h2>
+</div>
+<p class="text-lg text-slate-600 italic">"Matteo e il Vasino Blu è il suo primo libro. E seguramente, non sarà l’ultimo."</p>
+</div>
+<img src="mariangela-matteo.jpeg" class="rounded-[3rem] shadow-2xl border-8 border-white rotate-3 w-full"/>
+</div>
+</section>
+
+<footer class="py-12 text-center bg-white border-t">
+<p class="font-bold text-primary">Il Cerchio Edizioni</p>
+<p class="text-sm text-slate-500 mt-2">© 2024 Il Cerchio Edizioni. Tutti i diritti riservati.</p>
 </footer>
-<script>
-    let currentSlide = 0;
-    const totalSlides = 3;
-    const carousel = document.getElementById('book-carousel');
-    const dots = document.querySelectorAll('.carousel-dot');
-
-    function updateCarousel() {
-        if (!carousel) return;
-        carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
-        dots.forEach((dot, index) => {
-            if (index === currentSlide) {
-                dot.classList.remove('bg-white/50');
-                dot.classList.add('bg-primary', 'w-6');
-            } else {
-                dot.classList.remove('bg-primary', 'w-6');
-                dot.classList.add('bg-white/50');
-            }
-        });
-    }
-
-    function nextSlide() {
-        currentSlide = (currentSlide + 1) % totalSlides;
-        updateCarousel();
-    }
-
-    function prevSlide() {
-        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-        updateCarousel();
-    }
-
-    function goToSlide(index) {
-        currentSlide = index;
-        updateCarousel();
-    }
-
-    // Auto-play
-    setInterval(nextSlide, 5000);
-
-    // Initial setup
-    updateCarousel();
-</script>
-</body></html>
+</body>
+</html>
