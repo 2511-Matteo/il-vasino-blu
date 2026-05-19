@@ -1,68 +1,61 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Il Vasino Blu - Info</title>
-    <style>
-        body { 
-            font-family: 'Segoe UI', Arial, sans-serif; 
-            text-align: center; 
-            background-color: #f8fbff; 
-            padding: 40px 20px; 
-            margin: 0; 
-            color: #333;
-        }
-        .container { max-width: 400px; margin: 0 auto; }
-        .logo { 
-            width: 110px; 
-            height: 110px; 
-            border-radius: 50%; 
-            border: 5px solid white; 
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1); 
-            margin-bottom: 20px;
-        }
-        h1 { font-size: 1.8em; color: #0056b3; margin-bottom: 10px; }
-        p { font-size: 1.1em; color: #666; margin-bottom: 35px; }
-        
-        .link-button { 
-            display: block; 
-            width: 100%; 
-            padding: 18px; 
-            margin: 15px 0; 
-            background-color: #007bff; 
-            color: white; 
-            text-decoration: none; 
-            border-radius: 15px; 
-            font-weight: bold; 
-            font-size: 1.1em; 
-            box-shadow: 0 4px 10px rgba(0,123,255,0.3);
-            transition: all 0.3s ease;
-        }
-        
-        /* Color especial para Instagram */
-        .instagram { 
-            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
-            box-shadow: 0 4px 10px rgba(228,64,95,0.3); 
-        }
-        
-        .footer { margin-top: 50px; font-size: 0.9em; color: #bbb; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matteo e il Vasino Blu</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
 </head>
-<body>
-    <div class="container">
-        <img src="Matteo-circulo.png" alt="Il Vasino Blu" class="logo">
-        
-        <h1>Il Vasino Blu</h1>
-        <p>Tutto il mondo di Matteo in un click!</p>
-        
-        <a href="#" class="link-button" target="_blank">📖 Acquista il Libro</a>
-        
-        <a href="index.html" class="link-button" target="_blank">🌐 Visita il Sito Web</a>
-        
-        <a href="https://www.instagram.com/matteo.storie/" class="link-button instagram" target="_blank">📸 Seguimi su Instagram</a>
-
-        <div class="footer">Realizzato con ❤️ per Matteo</div>
+<body class="bg-gradient-to-b from-blue-100 to-blue-50">
+  <div class="min-h-screen flex flex-col items-center justify-center p-6">
+    
+    <!-- Logo/Círculo Matteo -->
+    <div class="mb-8 animate-bounce">
+      <div class="w-32 h-32 rounded-full bg-white shadow-2xl border-4 border-blue-400 overflow-hidden">
+        <img src="https://raw.githubusercontent.com/2511-Matteo/il-vasino-blu/48ccca48167f942570c510e0b9c154db5487fbb7/matteo-circulo.png" 
+             alt="Matteo" class="w-full h-full object-cover">
+      </div>
     </div>
+
+    <!-- Título -->
+    <h1 class="text-4xl font-bold text-center text-blue-600 mb-2" style="font-family: 'Plus Jakarta Sans';">
+      Matteo
+    </h1>
+    <p class="text-xl text-center text-blue-500 mb-8" style="font-family: 'Plus Jakarta Sans';">
+      e il Vasino Blu
+    </p>
+
+    <!-- Descripción -->
+    <p class="text-center text-gray-700 max-w-xs mb-10 text-sm leading-relaxed">
+      ✨ Tutto il mondo di Matteo in un click! ✨
+    </p>
+
+    <!-- Botones -->
+    <div class="flex flex-col gap-4 w-full max-w-xs">
+      
+      <a href="https://matteostorie.netlify.app/" 
+         class="w-full py-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-bold rounded-2xl text-center hover:shadow-xl transition-all shadow-lg transform hover:scale-105">
+        📖 Scopri la Storia
+      </a>
+
+      <a href="https://www.amazon.it/dp/B0H28TGRF5" 
+         class="w-full py-4 bg-yellow-400 text-black font-bold rounded-2xl text-center hover:bg-yellow-500 transition-all shadow-lg transform hover:scale-105">
+        🛒 Acquista Ora
+      </a>
+
+      <a href="https://www.instagram.com/matteo.storie/" 
+         class="w-full py-4 bg-gradient-to-r from-pink-500 to-purple-600 text-white font-bold rounded-2xl text-center hover:shadow-xl transition-all shadow-lg transform hover:scale-105">
+        📸 Seguimi su Instagram
+      </a>
+
+    </div>
+
+    <!-- Footer -->
+    <p class="text-center text-gray-500 text-xs mt-12">
+      ❤️ Creato con amore per Matteo
+    </p>
+
+  </div>
 </body>
 </html>
